@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css-portafolio/App_moviles.css">
+    <title>Moviles</title>
+</head>
+<body>
+    <div class="container">
+        
+      <div id="header">
+            <h1>Celulares</h1>
+       </div>
+
+          <div class="row">
+            <div class="row-item">
+                <label for="sistema">Sistema operativo</label>
+                <select name="sistema" id="sistema">
+                    <option value="S">Seleccione una opcion</option>
+                    <option value="O">All</option>
+                    <option value="I">IOS</option>
+                    <option value="A">Android</option>
+                </select>
+            </div>
+            <div class="row-item">
+                <label for="Marca">Marca</label>
+                <input type="text" id="marca" placeholder="Apple, Samsung, Motorola, Huawei, xiaomi, LG, Nokia, ZTE" />
+            </div>
+            <div class="row-item">
+                <button id="searchBtn" class="btn">Buscar</button>
+            </div>  
+          </div>
+
+            <div id="results">
+            <!-- SO,MODELO,MEMORIA INTERNA,MEMORIA RAM,PANTALLA,RESOLUCION CAMARA P,
+            REOLUCION CAMARA T,RED, COMPAÑIA,OTROS-->
+               
+            </div>
+
+    </div>
+    <script src="../js-portafolio/App_moviles.js"></script>
+</body>
+</html>

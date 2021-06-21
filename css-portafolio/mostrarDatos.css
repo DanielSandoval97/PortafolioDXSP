@@ -1,0 +1,62 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, a:after {
+    box-sizing: inherit;
+}
+
+
+body{
+    font-size: 16px; 
+}
+
+.contenedor{  
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.contenedorDatos{
+    background-color: rgba(0, 0, 0, .9);
+    padding: 1rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.mostrarDatos{
+   padding: 1.5rem;
+}
+
+.parrafo{
+    font-size: 1.7rem;
+    padding: 1rem;
+    margin: 0 auto;    
+}
+
+span{
+    font-size: 2.1rem;
+}
+
+.link{
+    margin: 1rem 0;
+}
+
+.boton{
+ background-color: rgb(11, 128, 238);
+ color: #fff;
+ padding: 1rem 2rem;
+ text-align: center;
+ border-radius: 7px;
+ font-size: 1.7rem;
+ text-transform: uppercase;
+ border: none;   
+ cursor: pointer;
+ text-decoration: none;
+}
+
+.boton:hover{
+background-color: rgba(0, 0, 0, .3);
+border: 1px solid  rgb(11, 128, 238);
+}
+

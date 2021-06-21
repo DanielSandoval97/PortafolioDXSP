@@ -1,0 +1,124 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif;
+    }
+
+*,
+*::after,
+*::before {
+box-sizing: inherit;
+}
+        
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(11,1fr);
+    grid-template-rows: repeat(9,auto);
+    grid-gap: 1rem;
+    }
+        
+body>*{
+    background-color: #D0D3D4;
+    border: 1px solid #222;
+}
+    
+div{
+    padding: 10px 15px;    
+}
+
+.texto{
+    background-color: white;
+    border: none;
+    text-align: center;
+    grid-column: 4/9;
+    grid-row: 2/3;
+}
+            
+.card-one{
+    border-top: 10px solid red;
+    grid-column: 2/ 5;
+    grid-row: 5/7;
+}  
+        
+.card-two{
+    border-top: 10px solid blue;
+    grid-column: 8/11;
+    grid-row: 5/7;
+}
+
+.card-three{
+    border-top: 10px solid green;
+    grid-column: 5/8;
+    grid-row: 4/6;
+}
+            
+.card-four{
+    border-top: 10px solid yellow;
+    grid-column: 5/8;
+    grid-row: 6/8;
+}
+
+/*CSS*/
+div img{
+    width: 50px;
+    height: 50px;
+    float: right;
+}  
+
+/* MOBILE */
+
+@media (max-width:650px){
+    body{
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows:  repeat(8,1fr;)
+    }
+    
+    div{
+        margin: 0 15px;
+    }
+    
+.texto{
+    background-color: white;
+    border: none;
+    text-align: center;
+    grid-column: 1/6;
+        grid-row: 2/3;
+}
+            
+.card-one{
+    border-top: 10px solid red;
+    grid-column:1/6;
+    grid-row: 3/4;
+}  
+        
+.card-two{
+    border-top: 10px solid blue;
+    grid-column: 1/6;
+    grid-row: 4/5;
+}
+
+.card-three{
+    border-top: 10px solid green;
+    grid-column:1/6;
+    grid-row: 5/6;
+}
+            
+.card-four{
+    border-top: 10px solid yellow;
+    grid-column: 1/6;
+    grid-row: 6/7;
+}
+
+/*CSS*/
+div img{
+    width: 50px;
+    height: 50px;
+    float: right;
+} 
+
+}

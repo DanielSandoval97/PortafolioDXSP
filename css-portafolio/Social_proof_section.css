@@ -1,0 +1,156 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif;
+    }
+
+*,
+*::after,
+*::before {
+box-sizing: inherit;
+}
+        
+body{
+    margin: 5px;
+    }
+
+.div-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.item-one{
+    width: 30%;
+    padding: 10px 15px;
+    margin: 20px 10px;
+}
+
+.item-one p {
+    font-size: 18px;
+}
+
+
+.item-one h1{
+    color: #5B2C6F;
+    font-size: 40px;
+}
+
+.item-two{
+    display: flex;
+    flex-flow: column wrap;
+    width: 55%;
+    padding: 10px 15px;
+    margin: 20px 10px;
+    font-size: 15px;
+}
+
+.item-two section{
+    background-color: gainsboro;
+    display: flex;
+    margin: 10px;
+    width: 50%;
+    border-radius: 7px;
+}
+
+.section-two{
+    align-self:center;
+}
+
+.section-three{
+    align-self:flex-end;
+}
+
+.item-two img{
+    width: 25px;
+}
+
+.item-three{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    height: 380px;
+}
+
+.item-three div{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #5B2C6F;
+    color: white;
+    width: 30%;
+    height: 65%;
+    margin: 0 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.item-three img{
+    width: 40px;
+    height: 40px;
+    margin: 15px 20px 10px 30px;
+    border-radius: 20px;
+}
+
+.item-three div .nombre{
+    margin: 10px 0 0 0;
+    width: 100px;
+    font-size: 12px;
+}
+
+.item-three .article-two{
+    align-self: center;
+} 
+
+.item-three .article-three{
+    align-self: flex-end;
+} 
+
+/* MOBILE */
+
+@media (max-width:900px){
+    .item-one{
+        width: 90%;
+        text-align: center;
+    }
+    
+    .item-two section{
+        width: 90%;
+    }
+}
+
+@media (max-width:750px){
+    .item-one{
+        width: 90%;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .item-two{
+    width: 90%;
+    }
+    
+     .item-two section{
+        display: flex;
+        flex-flow: row wrap;
+         justify-content: center;
+        width: 100%;
+    }
+    
+    .item-two section p{
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .item-two img{
+    width: 10%;
+    }
+    
+    .item-three div{
+        width: 90%;
+        margin: 15px 0;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario encuesta</title>
+    <link rel="stylesheet" href="../css-portafolio/Formulario-encuesta.css">
+</head>
+<body>
+    <div id="container">
+
+        <header id="header">
+          <h1 id="title">Formulario de Registro</h1>
+          <p id="description">Gracias por tu interes en unirte</p>
+        </header>
+      
+        <form id="survey-form">
+      
+          <div class="item-container">
+            <label for="name" id="name-label">Nombre</label>
+            <input type="text" id="name" name="name" class="input-form" placeholder="Ingrese su nombre" required>
+          </div>
+      
+          <div class="item-container">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" name="email" class="input-form" placeholder="Ingrese su email" required>
+          </div>
+      
+          <div class="item-container">
+            <label for="number" id="number-label">Edad</label>
+            <input type="number" id="number" name="number" class="input-form" placeholder="Edad" min="16" max="90" required>
+          </div>
+      
+          <div class="item-container">
+            <label id="nationality-select">Ingrese su nacionalidad</label>
+            <select name="nationality" id="dropdown" class="input-form" required>
+              <option disabled selected value>Nacionalidad</option>
+              <option value="Mexico">Mexico</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Venezuela">Venezuela</option>
+              <option value="Peru">Peru</option>
+              <option value="Panama">Panama</option>
+              <option value="Chile">Chile</option>
+              <option value="Uruguay">Uruguay</option>
+              <option value="USA">Estados Unidos</option>
+              <option value="Brasil">Brasil</option>
+            </select>
+          </div>
+      
+          <div class="item-container">
+            <p>Sexo: </p>
+            <label><input name="genero" value="definitely" type="radio" class="input-radio" checked/>Hombre</label>
+            <label><input name="genero" value="definitely" type="radio" class="input-radio" />Mujer</label>
+          </div>
+      
+          <div class="item-container">
+            <p>Cuales cursos le interesan:</p>
+            <label><input type="checkbox" name="option-courses" value="courses" class="input-checkbox" />Diseño web responsivo</label>
+            <label><input type="checkbox" name="option-courses" value="courses" class="input-checkbox" />JavaScript y Estructura de datos</label>
+            <label><input type="checkbox" name="option-courses" value="courses" class="input-checkbox" />Desarrollo Front-Edn</label>
+            <label><input type="checkbox" name="option-courses" value="courses" class="input-checkbox" />Visualizacion de datos</label>
+            <label><input type="checkbox" name="option-courses" value="courses" class="input-checkbox" />APIs</label>
+            <label><input type="checkbox" name="option-courses" value="courses" class="input-checkbox" />Python</label>
+            <label><input type="checkbox" name="option-courses" value="courses" class="input-checkbox" />Analisis de datos con python</label>
+            <label><input type="checkbox" name="option-courses" value="courses" class="input-checkbox" />Seguridad de la informacion</label>
+            <label><input type="checkbox" name="option-courses" value="courses" class="input-checkbox" />Aprendizaje automatico</label>
+          </div>
+      
+          <div class="item-container">
+            <p>Sugerencias:</p>
+            <textarea id="comment" class="input-area" name="comment" placeholder="Agrega algun comentario"></textarea>
+          </div>
+      
+          <div class="item-container">
+            <button type="submit" class="input-submit" id="submit">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div> 
+</body>
+</html>
